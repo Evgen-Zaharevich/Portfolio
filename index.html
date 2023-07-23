@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Evgen Zaharevich Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="hero-section">
+          <img
+            data-speed=".6"
+            class="hero"
+            src="img/hero.png"
+            alt="hero photo"
+          />
+
+          <div class="container">
+            <div data-speed=".75" class="main-header">
+              <h1 class="main-title">Evgen Zaharevich</h1>
+            </div>
+          </div>
+        </header>
+
+        <div class="portfolio">
+          <div class="container">
+            <main class="gallery">
+              <div data-speed=".9" class="gallery__left">
+                <img class="gallery__item" src="img/work/1.jpg" alt="work-1" />
+                <img class="gallery__item" src="img/work/2.jpg" alt="work-2" />
+                <img class="gallery__item" src="img/work/6.jpg" alt="work-6" />
+
+                <div class="text-block gallery__item">
+                  <h2 class="text-block__h">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </h2>
+
+                  <p class="text-block__p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur laboriosam eaque dolor quia dolorum maxime,
+                    itaque repudiandae quam incidunt aperiam facilis, odio id.
+                  </p>
+                </div>
+              </div>
+
+              <div data-speed="1.1" class="gallery__right">
+                <div class="text-block gallery__item">
+                  <h2 class="text-block__h">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </h2>
+                  <p class="text-block__p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur laboriosam eaque dolor quia dolorum maxime,
+                    itaque repudiandae quam incidunt aperiam facilis, odio id.
+                  </p>
+                </div>
+
+                <img class="gallery__item" src="img/work/3.jpg" alt="work-3" />
+                <img class="gallery__item" src="img/work/4.jpg" alt="work-4" />
+                <img class="gallery__item" src="img/work/5.jpg" alt="work-5" />
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
