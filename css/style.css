@@ -13,6 +13,7 @@
   font-family: outfit-c;
   src: url(../fonts/outfit-regular.woff2);
 }
+
 h1,
 h2,
 h3,
@@ -20,6 +21,10 @@ h4,
 h5,
 h6 {
   font-family: outfit-c;
+}
+
+ul {
+  padding: 0;
 }
 
 .content,
@@ -37,22 +42,40 @@ body {
   overflow-x: hidden;
 }
 
-.social-liks {
-  display: inline-block;
+.social {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: calc(var(--index) * 15);
+  height: calc(var(--index) * 10.5);
   background-image: url(/img/brush-stroke/brush-stroke-1.png);
   background-repeat: no-repeat;
-  background-position: 10% 50%;
-  background-size: 300px;
+  background-position: 0% 50%;
+  background-size: 250px;
+  padding: auto 0;
 }
-.social-liks > li {
-  display: inline-block;
+
+.social:nth-child(1) {
+  padding-left: 30px;
+  /* gap: 0; */
+}
+
+.social__item {
+  list-style-type: none;
+}
+
+.social__link {
+}
+
+.social__icon {
+  fill: white;
 }
 
 .hero {
   width: calc(var(--index) * 40);
   position: absolute;
   left: 39vw;
-  top: 6vh;
+  top: 5vh;
   z-index: -1;
 }
 
@@ -65,10 +88,10 @@ body {
 }
 
 .main-title {
-  font-size: calc(var(--index) * 6.5);
+  font-size: calc(var(--index) * 6);
   position: absolute;
   width: min-content;
-  bottom: 0vh;
+  bottom: 15vh;
   line-height: 1.1;
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 0.01em;
