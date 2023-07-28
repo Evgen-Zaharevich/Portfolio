@@ -98,8 +98,6 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-/* POrtfolio galery------------------------ */
-
 .gallery {
   display: flex;
   padding: calc(var(--index) * 8) 0;
@@ -112,36 +110,53 @@ body {
   flex-direction: column;
 }
 
+.image-brushes {
+  background-image: url(/img/brush-stroke/brush-stroke-image.png);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: 500px;
+  padding: calc(var(--index) * 3) 0;
+  padding-right: 50px;
+  padding-left: 40px;
+  margin-bottom: calc(var(--gallery-gap) * 1.2);
+}
+
 .gallery__item {
   max-width: calc(var(--index) * 21);
   max-height: 180vh;
-  margin-bottom: var(--gallery-gap);
+
   border-radius: 8px;
 }
 
 .gallery__left {
-  margin-top: calc(var(--gallery-gap) * 1.5);
-  /* margin-top: var(--gallery-gap); */
+  margin-top: calc(var(--gallery-gap) * 1.25);
 }
 
-.gallery__right .gallery__item {
+.gallery__right {
   margin: 0;
-  margin-top: var(--gallery-gap);
-  /* margin-top: calc(var(--gallery-gap) * 1.5); */
+  margin-top: calc(var(--gallery-gap) * 0.8);
 }
 
 .text-block {
-  color: var(--color-text);
+  color: black;
   position: relative;
+  margin-bottom: calc(var(--gallery-gap) * 2.1);
 }
 
-.text-block__h {
+.text-block__title {
   font-size: 2rem;
   line-height: 2.4rem;
-  color: var(--color-header);
   margin-bottom: 1.5rem;
 }
 
-.text-block__p {
+.text-block__title--webstudio {
+  color: #2196f3;
+}
+
+.text-block__title--icecream {
+  color: #d41443;
+}
+
+.text-block__paragraph {
   line-height: 1.75;
 }

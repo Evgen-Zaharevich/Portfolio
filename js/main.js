@@ -36,8 +36,8 @@ itemsLeftColumn.forEach((item) => {
       opacity: 1,
       scrollTrigger: {
         trigger: item,
-        start: "-850",
-        end: "-100",
+        start: "-3000",
+        end: "-500",
         scrub: true,
       },
     }
@@ -55,10 +55,25 @@ itemsRightColumn.forEach((item) => {
       opacity: 1,
       scrollTrigger: {
         trigger: item,
-        start: "-850",
+        start: "-3000",
         end: "-100",
         scrub: true,
       },
     }
   );
 });
+
+gsap.fromTo(
+  ".image-brushes",
+  { x: -100, opacity: 0 },
+  {
+    x: 0,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".image-brushes",
+      start: "-850",
+      end: "-100",
+      scrub: true,
+    },
+  }
+);
