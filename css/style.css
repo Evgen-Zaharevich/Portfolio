@@ -164,7 +164,7 @@ body {
 }
 
 .text-block__title--icecream {
-  color: #d41443;
+  color: #ffa5ba;
 }
 
 .text-block__title--filmoteka {
@@ -172,6 +172,9 @@ body {
 }
 .text-block__title--task-pro {
   color: #bedbb0;
+}
+.text-block__title--image-finder {
+  color: rgb(100, 243, 140);
 }
 
 .text-block__paragraph {
