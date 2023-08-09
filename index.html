@@ -21,7 +21,8 @@
     <script src="libs/gsap/gsap.min.js" defer></script>
     <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+    <script type="module" src="js/button-on-top.js"></script>
   </head>
 
   <body>
@@ -117,9 +118,9 @@
                   />
                 </div>
 
-                <div class="text-block text-block__icecream gallery__item">
+                <div class="text-block text-block__ice-cream gallery__item">
                   <h2 class="text-block__title">
-                    <span class="text-block__title--icecream">I</span>ceCream
+                    <span class="text-block__title--ice-cream">I</span>ceCream
                   </h2>
                   <p class="text-block__paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -157,9 +158,9 @@
               </div>
 
               <div data-speed="1.1" class="gallery__right">
-                <div class="text-block text-block__webstudio gallery__item">
+                <div class="text-block text-block__web-studio gallery__item">
                   <h2 class="text-block__title">
-                    <span class="text-block__title--webstudio">W</span>ebStudio
+                    <span class="text-block__title--web-studio">W</span>ebStudio
                   </h2>
                   <p class="text-block__paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -197,7 +198,8 @@
 
                 <div class="text-block text-block__image-finder gallery__item">
                   <h2 class="text-block__title">
-                    <span class="text-block__title--image-finder">I</span>mageFinder
+                    <span class="text-block__title--image-finder">I</span
+                    >mageFinder
                   </h2>
                   <p class="text-block__paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -206,11 +208,16 @@
                   </p>
                 </div>
               </div>
-              </div>
             </main>
           </div>
         </div>
+        <footer class="footer"></footer>
       </div>
+    </div>
+    <div class="on-top">
+      <svg class="arrow-up" width="40" height="40">
+        <use href="/img/icons.svg#arrow-up"></use>
+      </svg>
     </div>
   </body>
 </html>

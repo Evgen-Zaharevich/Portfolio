@@ -91,11 +91,12 @@ body {
   font-size: calc(var(--index) * 6);
   position: absolute;
   width: min-content;
-  bottom: 15vh;
+  bottom: 30vh;
   line-height: 1.1;
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 0.01em;
   font-family: "Playfair Display", serif;
+  margin: 0;
 }
 
 .gallery {
@@ -104,7 +105,7 @@ body {
 }
 
 .gallery > * {
-  flex: 1;
+  flex: 2;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -113,12 +114,14 @@ body {
 .image-brushes {
   background-image: url(/img/brush-stroke/brush-stroke-image.png);
   background-repeat: no-repeat;
-  background-position: 50% 30%;
-  background-size: 500px;
-  padding: calc(var(--index) * 3) 0;
-  padding-right: 50px;
-  padding-left: 40px;
+  /* background-position: 75% 30%; */
+  background-size: 100%;
+  padding: calc(var(--index) * 3) 60px;
   margin-bottom: calc(var(--gallery-gap) * 1.4);
+}
+
+.image-brushes:nth-child(1) {
+  margin-top: calc(var(--gallery-gap) * 1.8);
 }
 
 .gallery__item {
@@ -129,12 +132,14 @@ body {
 }
 
 .gallery__left {
-  margin-top: calc(var(--gallery-gap) * 1.6);
+  margin-top: calc(var(--gallery-gap) * 1);
+  margin-bottom: calc(var(--gallery-gap) * 1.5);
 }
 
 .gallery__right {
   margin: 0;
   margin-top: calc(var(--gallery-gap) * 1);
+  margin-bottom: calc(var(--gallery-gap) * 1.5);
 }
 
 .text-block {
@@ -142,15 +147,21 @@ body {
   position: relative;
 }
 
-.text-block__webstudio {
-  margin-bottom: calc(var(--gallery-gap) * 2.65);
+.text-block__web-studio {
+  margin-bottom: calc(var(--gallery-gap) * 2.8);
 }
-.text-block__icecream {
+.text-block__ice-cream {
   margin-bottom: calc(var(--gallery-gap) * 1.5);
 }
 .text-block__filmoteka {
   margin-top: calc(var(--gallery-gap) * 1.15);
-  margin-bottom: calc(var(--gallery-gap) * 2);
+  margin-bottom: calc(var(--gallery-gap) * 2.8);
+}
+.text-block__task-pro {
+  margin-bottom: calc(var(--gallery-gap) * 1.4);
+}
+.text-block__image-finder {
+  margin-top: calc(var(--gallery-gap) * 1.15);
 }
 
 .text-block__title {
@@ -159,11 +170,11 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.text-block__title--webstudio {
+.text-block__title--web-studio {
   color: #2196f3;
 }
 
-.text-block__title--icecream {
+.text-block__title--ice-cream {
   color: #ffa5ba;
 }
 
@@ -179,4 +190,40 @@ body {
 
 .text-block__paragraph {
   line-height: 1.75;
+}
+
+.footer {
+  background-image: url(/img/brush-stroke/brush-footer-2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: calc(var(--index) * 6);
+}
+
+.on-top {
+  position: fixed;
+  right: 30px;
+  bottom: 10%;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.8;
+
+  box-shadow: black 5px 5px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
+    rgba(0, 0, 0, 0.1) 0px 34px 30px;
+  transform: translate(-1px, -1px);
+}
+.on-top:hover {
+  opacity: 1;
+}
+.on-top:active {
+  transform: translateY(0px);
+  box-shadow: black 2px 2px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
+    rgba(0, 0, 0, 0.1) 0px 34px 30px;
+  transition-duration: 100ms;
+}
+
+.arrow-up {
+  fill: black;
+  background-color: #fff;
+  border-radius: 50%;
 }
