@@ -177,7 +177,6 @@ body {
 .text-block__title--ice-cream {
   color: #ffa5ba;
 }
-
 .text-block__title--filmoteka {
   color: rgb(255, 0, 27);
 }
@@ -203,21 +202,29 @@ body {
   position: fixed;
   right: 30px;
   bottom: 10%;
-  cursor: pointer;
   border-radius: 50%;
   background-color: black;
   opacity: 0.8;
+  cursor: pointer;
 
-  box-shadow: black 5px 5px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
-    rgba(0, 0, 0, 0.1) 0px 34px 30px;
+  display: none;
+
   transform: translate(-1px, -1px);
+  box-shadow: black 3px 3px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
+    rgba(0, 0, 0, 0.1) 0px 34px 30px;
 }
+
+.on-top--show-btn {
+  display: block;
+}
+
 .on-top:hover {
   opacity: 1;
 }
+
 .on-top:active {
   transform: translateY(0px);
-  box-shadow: black 2px 2px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
+  box-shadow: black 1px 1px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
     rgba(0, 0, 0, 0.1) 0px 34px 30px;
   transition-duration: 100ms;
 }
