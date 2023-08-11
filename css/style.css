@@ -55,20 +55,54 @@ body {
   padding: auto 0;
 }
 
-.social:nth-child(1) {
-  padding-left: 30px;
-  /* gap: 0; */
-}
-
 .social__item {
   list-style-type: none;
 }
 
-.social__link {
+.social__item:nth-child(1) {
+  padding-left: 30px;
 }
 
 .social__icon {
   fill: white;
+  border: 0.5px solid white;
+  border-radius: 3px;
+  transition: 500ms;
+}
+
+.social__link:hover .social__icon {
+  transition: 500ms;
+  transform: scale(1.15);
+}
+.social__icon--mobile-phone,
+.social__icon--email {
+  padding: 4px;
+}
+.social__link:hover .social__icon--mobile-phone {
+  background: linear-gradient(to right, #fdfc47, #24fe41);
+  fill: black;
+  border: none;
+}
+.social__link:hover .social__icon--email {
+  background: linear-gradient(to right, #fffc00, #ffffff);
+  fill: black;
+  border: none;
+}
+.social__link:hover .social__icon--telegram {
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  border: none;
+}
+
+.social__icon--linkedin {
+}
+.social__link:hover .social__icon--linkedin {
+  background: linear-gradient(to right, #396afc, #2948ff);
+  border: none;
+}
+
+.social__link:hover .social__icon--github {
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  fill: black;
 }
 
 .hero {
@@ -114,7 +148,6 @@ body {
 .image-brushes {
   background-image: url(/img/brush-stroke/brush-stroke-image.png);
   background-repeat: no-repeat;
-  /* background-position: 75% 30%; */
   background-size: 100%;
   padding: calc(var(--index) * 3) 60px;
   margin-bottom: calc(var(--gallery-gap) * 1.4);
@@ -226,7 +259,7 @@ body {
   transform: translateY(0px);
   box-shadow: black 1px 1px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
     rgba(0, 0, 0, 0.1) 0px 34px 30px;
-  transition-duration: 100ms;
+  transition: 100ms;
 }
 
 .arrow-up {
