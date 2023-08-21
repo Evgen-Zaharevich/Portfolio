@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      href="node_modules/modern-normalize/modern-normalize.css"
     />
     <!-- Fonts -->
     <link
@@ -126,140 +126,154 @@
           </div>
         </header>
 
-        <div class="portfolio">
-          <div class="container">
-            <main class="gallery">
-              <div data-speed=".8" class="gallery__left">
-                <div class="image-brushes">
-                  <a
-                    class="gallery__link"
-                    href="https://evgen-zaharevich.github.io/web-studio/"
-                    target="_blank"
+        <main>
+          <div class="portfolio">
+            <div class="container">
+              <p class="about">
+                I'm a Front-End Developer based in Kyiv, Ukraine. I create the
+                Front-End of Websites and Web Applications that leads to
+                success.
+              </p>
+              <div class="gallery">
+                <div data-speed=".8" class="gallery__left">
+                  <div class="image-brushes">
+                    <a
+                      class="gallery__link"
+                      href="https://evgen-zaharevich.github.io/web-studio/"
+                      target="_blank"
+                    >
+                      <img
+                        class="gallery__item"
+                        src="img/work/WebStudio.jpg"
+                        alt="Website image"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="text-block text-block__ice-cream gallery__item">
+                    <h2 class="text-block__title">
+                      <span class="text-block__title--ice-cream">I</span>ceCream
+                    </h2>
+                    <p class="text-block__paragraph">
+                      Adaptive Web Site for Ice Cream Store. <br />
+                      Technologies Used: HTML, SCSS, JavaScript, JQuery, Parcel,
+                      Animation.css
+                    </p>
+                  </div>
+
+                  <div class="image-brushes">
+                    <a
+                      class="gallery__link"
+                      href="https://evgen-zaharevich.github.io/filmoteka"
+                      target="_blank"
+                    >
+                      <img
+                        class="gallery__item"
+                        src="img/work/Filmoteka.jpg"
+                        alt="Website image"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="text-block text-block__task-pro gallery__item">
+                    <h2 class="text-block__title">
+                      <span class="text-block__title--task-pro">T</span>askPro
+                    </h2>
+                    <p class="text-block__paragraph">
+                      Application for planning your work and free time.
+                      Technologies Used: React.js,
+                    </p>
+                  </div>
+
+                  <div class="image-brushes">
+                    <a
+                      class="gallery__link"
+                      href="https://evgen-zaharevich.github.io/ImageFinder/"
+                      target="_blank"
+                    >
+                      <img
+                        class="gallery__item"
+                        src="img/work/ImageFinder.jpg"
+                        alt="Website image"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div data-speed="1.1" class="gallery__right">
+                  <div class="text-block text-block__web-studio gallery__item">
+                    <h2 class="text-block__title">
+                      <span class="text-block__title--web-studio">W</span
+                      >ebStudio
+                    </h2>
+                    <p class="text-block__paragraph">
+                      Adaptive and responsive landing page for a studio that
+                      develops new interfaces and designs. <br />
+                      Technologies Used: HTML, SCSS, JavaScript.
+                    </p>
+                  </div>
+
+                  <div class="image-brushes">
+                    <a
+                      class="gallery__link"
+                      href="https://evgen-zaharevich.github.io/ice-cream/"
+                      target="_blank"
+                    >
+                      <img
+                        class="gallery__item"
+                        src="img/work/IceCreame.jpg"
+                        alt="Website image"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="text-block text-block__filmoteka gallery__item">
+                    <h2 class="text-block__title">
+                      <span class="text-block__title--filmoteka">F</span
+                      >ilmoteka
+                    </h2>
+                    <p class="text-block__paragraph">
+                      A site where you can familiarize yourself with novelties,
+                      bestsellers and ordinary films of the world of cinema. Get
+                      acquainted with the description, watch the trailer, find
+                      out the rating of the film.
+                      <br />
+                      Technologies Used: HTML, SCSS, JavaScript, Parcel, Axios,
+                      Notiflix, Darkmode-JS.
+                    </p>
+                  </div>
+
+                  <div class="image-brushes">
+                    <a
+                      class="gallery__link"
+                      href="https://dmitriyushkvarok.github.io/team-project-task-pro-frontend/"
+                      target="_blank"
+                    >
+                      <img
+                        class="gallery__item"
+                        src="img/work/TaskPro.jpg"
+                        alt="Website image"
+                    /></a>
+                  </div>
+
+                  <div
+                    class="text-block text-block__image-finder gallery__item"
                   >
-                    <img
-                      class="gallery__item"
-                      src="img/work/WebStudio.jpg"
-                      alt="Website image"
-                    />
-                  </a>
-                </div>
-
-                <div class="text-block text-block__ice-cream gallery__item">
-                  <h2 class="text-block__title">
-                    <span class="text-block__title--ice-cream">I</span>ceCream
-                  </h2>
-                  <p class="text-block__paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur laboriosam eaque dolor quia dolorum maxime,
-                    itaque repudiandae quam incidunt aperiam facilis, odio id.
-                  </p>
-                </div>
-
-                <div class="image-brushes">
-                  <a
-                    class="gallery__link"
-                    href="https://evgen-zaharevich.github.io/filmoteka"
-                    target="_blank"
-                  >
-                    <img
-                      class="gallery__item"
-                      src="img/work/Filmoteka.jpg"
-                      alt="Website image"
-                    />
-                  </a>
-                </div>
-
-                <div class="text-block text-block__task-pro gallery__item">
-                  <h2 class="text-block__title">
-                    <span class="text-block__title--task-pro">T</span>askPro
-                  </h2>
-                  <p class="text-block__paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur laboriosam eaque dolor quia dolorum maxime,
-                    itaque repudiandae quam incidunt aperiam facilis, odio id.
-                  </p>
-                </div>
-
-                <div class="image-brushes">
-                  <a
-                    class="gallery__link"
-                    href="https://evgen-zaharevich.github.io/ImageFinder/"
-                    target="_blank"
-                  >
-                    <img
-                      class="gallery__item"
-                      src="img/work/ImageFinder.jpg"
-                      alt="Website image"
-                    />
-                  </a>
+                    <h2 class="text-block__title">
+                      <span class="text-block__title--image-finder">I</span
+                      >mageFinder
+                    </h2>
+                    <p class="text-block__paragraph">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Consectetur laboriosam eaque dolor quia dolorum maxime,
+                      itaque repudiandae quam incidunt aperiam facilis, odio id.
+                    </p>
+                  </div>
                 </div>
               </div>
-
-              <div data-speed="1.1" class="gallery__right">
-                <div class="text-block text-block__web-studio gallery__item">
-                  <h2 class="text-block__title">
-                    <span class="text-block__title--web-studio">W</span>ebStudio
-                  </h2>
-                  <p class="text-block__paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur laboriosam eaque dolor quia dolorum maxime,
-                    itaque repudiandae quam incidunt aperiam facilis, odio id.
-                  </p>
-                </div>
-
-                <div class="image-brushes">
-                  <a
-                    class="gallery__link"
-                    href="https://evgen-zaharevich.github.io/ice-cream/"
-                    target="_blank"
-                  >
-                    <img
-                      class="gallery__item"
-                      src="img/work/IceCreame.jpg"
-                      alt="Website image"
-                    />
-                  </a>
-                </div>
-
-                <div class="text-block text-block__filmoteka gallery__item">
-                  <h2 class="text-block__title">
-                    <span class="text-block__title--filmoteka">F</span>ilmoteka
-                  </h2>
-                  <p class="text-block__paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur laboriosam eaque dolor quia dolorum maxime,
-                    itaque repudiandae quam incidunt aperiam facilis, odio id.
-                  </p>
-                </div>
-
-                <div class="image-brushes">
-                  <a
-                    class="gallery__link"
-                    href="https://dmitriyushkvarok.github.io/team-project-task-pro-frontend/"
-                    target="_blank"
-                  >
-                    <img
-                      class="gallery__item"
-                      src="img/work/TaskPro.jpg"
-                      alt="Website image"
-                  /></a>
-                </div>
-
-                <div class="text-block text-block__image-finder gallery__item">
-                  <h2 class="text-block__title">
-                    <span class="text-block__title--image-finder">I</span
-                    >mageFinder
-                  </h2>
-                  <p class="text-block__paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur laboriosam eaque dolor quia dolorum maxime,
-                    itaque repudiandae quam incidunt aperiam facilis, odio id.
-                  </p>
-                </div>
-              </div>
-            </main>
+            </div>
           </div>
-        </div>
+        </main>
         <footer class="footer"></footer>
       </div>
     </div>

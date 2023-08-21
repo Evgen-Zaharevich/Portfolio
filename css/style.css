@@ -133,6 +133,13 @@ body {
   margin: 0;
 }
 
+.about {
+  line-height: 1.75;
+  margin: 200px 130px 0px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
 .gallery {
   display: flex;
   padding: calc(var(--index) * 3) 0;
