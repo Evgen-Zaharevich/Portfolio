@@ -48,7 +48,7 @@ body {
   gap: 5px;
   width: calc(var(--index) * 15);
   height: calc(var(--index) * 10.5);
-  background-image: url(/img/brush-stroke/brush-stroke-1.png);
+  background-image: url(../img/brush-stroke/brush-stroke-1.png);
   background-repeat: no-repeat;
   background-position: 0% 50%;
   background-size: 250px;
@@ -153,7 +153,7 @@ body {
 }
 
 .image-brushes {
-  background-image: url(/img/brush-stroke/brush-stroke-image.png);
+  background-image: url(../img/brush-stroke/brush-stroke-image.png);
   background-repeat: no-repeat;
   background-size: 100%;
   padding: calc(var(--index) * 3) 60px;
@@ -234,7 +234,7 @@ body {
 }
 
 .footer {
-  background-image: url(/img/brush-stroke/brush-footer-2.png);
+  background-image: url(../img/brush-stroke/brush-footer-2.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 10%;
