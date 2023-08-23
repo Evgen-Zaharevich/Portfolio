@@ -1,5 +1,3 @@
-/* @import "node_modules/modern-normalize/modern-normalize.css"; */
-
 :root {
   --index: calc(1vw + 1vh);
   --color-header: #f4efec;
@@ -23,10 +21,6 @@ h4,
 h5,
 h6 {
   font-family: outfit-c;
-}
-
-ul {
-  padding: 0;
 }
 
 .content,
@@ -54,7 +48,7 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 50%;
   background-size: 250px;
-  padding: auto 0;
+  padding: 0;
 }
 
 .social__item {
@@ -69,11 +63,11 @@ body {
   fill: white;
   border: 0.5px solid white;
   border-radius: 3px;
-  transition: 500ms;
+  transition: 300ms;
 }
 
 .social__link:hover .social__icon {
-  transition: 500ms;
+  transition: 300ms;
   transform: scale(1.15);
 }
 .social__icon--mobile-phone,
