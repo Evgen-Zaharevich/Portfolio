@@ -72,7 +72,7 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".image-brushes",
       start: "-850",
-      end: "-100",
+      end: "-250",
       scrub: true,
     },
   }
