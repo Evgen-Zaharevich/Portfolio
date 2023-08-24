@@ -1,0 +1,62 @@
+.social {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: calc(var(--index) * 15);
+  height: calc(var(--index) * 10.5);
+  background-image: url(../img/brush-stroke/brush-stroke-1.png);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: 250px;
+  padding: 0;
+}
+
+.social__item {
+  list-style-type: none;
+}
+
+.social__item:nth-child(1) {
+  padding-left: 30px;
+}
+
+.social__icon {
+  fill: white;
+  border: 0.5px solid white;
+  border-radius: 3px;
+  transition: 300ms;
+}
+
+.social__link:hover .social__icon {
+  transition: 300ms;
+  transform: scale(1.15);
+}
+.social__icon--mobile-phone,
+.social__icon--email {
+  padding: 4px;
+}
+.social__link:hover .social__icon--mobile-phone {
+  background: linear-gradient(to right, #fdfc47, #24fe41);
+  fill: black;
+  border: none;
+}
+.social__link:hover .social__icon--email {
+  background: linear-gradient(to right, #fffc00, #ffffff);
+  fill: black;
+  border: none;
+}
+.social__link:hover .social__icon--telegram {
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  border: none;
+}
+
+.social__icon--linkedin {
+}
+.social__link:hover .social__icon--linkedin {
+  background: linear-gradient(to right, #396afc, #2948ff);
+  border: none;
+}
+
+.social__link:hover .social__icon--github {
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  fill: black;
+}

@@ -1,0 +1,18 @@
+.image-brushes {
+  background-image: url(../img/brush-stroke/brush-stroke-image.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: calc(var(--index) * 3) 60px;
+  margin-bottom: calc(var(--gallery-gap) * 1.3);
+}
+
+.image-brushes:nth-child(1) {
+  margin-top: calc(var(--gallery-gap) * 1.7);
+}
+
+.image-brushes:last-child {
+  margin-bottom: 0;
+}
+/* .image-brushes::not(:last-child){
+  margin-bottom: calc(var(--gallery-gap) * 1.3);
+} */
