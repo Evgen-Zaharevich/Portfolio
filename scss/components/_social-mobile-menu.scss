@@ -1,0 +1,70 @@
+.social-mobile-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+
+  transform: translateX(100%);
+  transition: transform 300ms ease 500ms;
+
+  &.is-open {
+    transform: translateX(0);
+    transition: transform 300ms ease;
+  }
+}
+
+.social-mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__icon {
+    fill: var(--icon-white-color);
+    border: 0.5px solid var(--icon-border-white);
+    border-radius: 3px;
+    transition: var(--social-icon-transition);
+  }
+
+  &__icon--mobile-phone,
+  &__icon--email {
+    padding: 4px;
+  }
+
+  &__link:hover &__icon {
+    transition: var(--social-icon-transition);
+    transform: scale(1.15);
+  }
+  &__link:hover &__icon--mobile-phone {
+    background: var(--bgc-icon-mobile-phone);
+    // fill: var(--icon-black-color);
+    border: none;
+  }
+  &__link:hover &__icon--email {
+    background: var(--bgc-icon-email);
+    // fill: var(--icon-black-color);
+    border: none;
+  }
+  &__link:hover &__icon--telegram {
+    background: var(--bgc-icon-telegram);
+    border: none;
+  }
+  &__link:hover &__icon--linkedin {
+    background: var(--bgc-icon-linkedin);
+    border: none;
+  }
+  &__link:hover &__icon--github {
+    background: var(--bgc-icon-github);
+    fill: var(--icon-black-color);
+  }
+}

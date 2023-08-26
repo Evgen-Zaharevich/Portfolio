@@ -13,6 +13,19 @@ body {
   overflow-x: hidden;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: outfit-c;
+}
+
 .container {
-  padding: 0 7vw;
+  padding: 0 5px;
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 7vw;
+  }
 }

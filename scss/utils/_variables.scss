@@ -1,8 +1,32 @@
 :root {
   --index: calc(1vw + 1vh);
-  --color-header: #f4efec;
-  --color-text: #cdc6c3;
   --gallery-gap: calc(var(--index) * 10);
+
+  --bgc-icon-mobile-phone: linear-gradient(to right, #11998e, #38ef7d);
+  --bgc-icon-email: linear-gradient(to right, #d4145a, #fbb03b);
+  --bgc-icon-telegram: linear-gradient(to right, #56ccf2, #2f80ed);
+  --bgc-icon-linkedin: linear-gradient(to right, #396afc, #2948ff);
+  --bgc-icon-github: linear-gradient(to right, #ece9e6, #ffffff);
+  --icon-white-color: #ffffff;
+  --icon-black-color: black;
+  --icon-border-white: #ffffff;
+
+  --web-studio-title-color: #2196f3;
+  --ice-cream-title-color: #ffa5ba;
+  --filmoteka-title-color: rgb(255, 0, 27);
+  --task-pro-title-color: #bedbb0;
+  --image-finder-title-color: rgb(100, 243, 140);
+
+  --button-shadow: black 3px 3px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
+    rgba(0, 0, 0, 0.1) 0px 34px 30px;
+  --button-shadow-active: black 1px 1px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
+    rgba(0, 0, 0, 0.1) 0px 34px 30px;
+  --button-transition: 100ms;
+  --social-icon-transition: 300ms;
+  --burger-icon-transition: 300ms;
+
+  // --color-header: #f4efec;
+  // --color-text: #cdc6c3;
 }
 
 @font-face {
@@ -12,13 +36,4 @@
 @font-face {
   font-family: outfit-c;
   src: url(../fonts/outfit-regular.woff2);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: outfit-c;
 }

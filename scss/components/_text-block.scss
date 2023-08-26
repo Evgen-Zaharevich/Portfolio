@@ -1,6 +1,6 @@
 .text-block {
-  color: black;
-  position: relative;
+  // color: black;
+  // position: relative;
 }
 
 .text-block__web-studio {
@@ -27,20 +27,20 @@
 }
 
 .text-block__title--web-studio {
-  color: #2196f3;
+  color: var(--web-studio-title-color);
 }
 
 .text-block__title--ice-cream {
-  color: #ffa5ba;
+  color: var(--ice-cream-title-color);
 }
 .text-block__title--filmoteka {
-  color: rgb(255, 0, 27);
+  color: var(--filmoteka-title-color);
 }
 .text-block__title--task-pro {
-  color: #bedbb0;
+  color: var(--task-pro-title-color);
 }
 .text-block__title--image-finder {
-  color: rgb(100, 243, 140);
+  color: var(--image-finder-title-color);
 }
 
 .text-block__paragraph {

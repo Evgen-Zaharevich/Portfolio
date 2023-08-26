@@ -10,8 +10,7 @@
   display: none;
 
   transform: translate(-1px, -1px);
-  box-shadow: black 3px 3px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
-    rgba(0, 0, 0, 0.1) 0px 34px 30px;
+  box-shadow: var(--button-shadow-active);
 }
 
 .on-top--show-btn {
@@ -24,13 +23,12 @@
 
 .on-top:active {
   transform: translateY(0px);
-  box-shadow: black 1px 1px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
-    rgba(0, 0, 0, 0.1) 0px 34px 30px;
-  transition: 100ms;
+  box-shadow: var(--button-shadow);
+  transition: var(--button-transition);
 }
 
 .arrow-up {
-  fill: black;
+  fill: var(--icon-black-color);
   background-color: #fff;
   border-radius: 50%;
 }
