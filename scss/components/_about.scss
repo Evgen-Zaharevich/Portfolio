@@ -1,6 +1,11 @@
 .about {
-  line-height: 1.75;
-  margin: 200px 130px 0px;
-  font-size: 30px;
-  font-weight: 500;
+  margin: 100px 0;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    margin: 200px 130px 50px;
+    font-size: 30px;
+  }
 }

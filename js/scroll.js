@@ -25,7 +25,7 @@ gsap.fromTo(
   }
 );
 
-let itemsLeftColumn = gsap.utils.toArray(".gallery__left .gallery__item");
+let itemsLeftColumn = gsap.utils.toArray("gallery__left .gallery__item");
 
 itemsLeftColumn.forEach((item) => {
   gsap.fromTo(

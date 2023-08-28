@@ -19,18 +19,13 @@
       rel="stylesheet"
     />
 
-    <!-- mobile menu -->
-
-    <script
+    <!-- <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
-
-    <!-- ---- -->
-
+    ></script> -->
+    <script src="./js/mobile-menu.js" defer></script>
     <script src="./libs/gsap/gsap.min.js" defer></script>
     <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
@@ -39,181 +34,13 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <button class="menu-button" data-menu-button aria-expanded="false">
-        <span class="burger-menu"></span>
-      </button>
-      <div class="social-mobile-menu-container" data-menu>
-        <ul class="social-mobile-menu">
-          <li class="social-mobile-menu__item">
-            <a
-              class="social-mobile-menu__link"
-              href="tel:+380983505359"
-              target="_blank"
-              title="Call Evgen"
-            >
-              <svg
-                class="social-mobile-menu__icon social-mobile-menu__icon--mobile-phone"
-                width="30"
-                height="30"
-              >
-                <use href="./img/icons.svg#mobile-phone"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-mobile-menu__item">
-            <a
-              class="social-mobile-menu__link"
-              href="mailto:Zaharevich.Evgen@gmail.com"
-              target="_blank"
-              title="Send a letter to Evgen"
-            >
-              <svg
-                class="social-mobile-menu__icon social-mobile-menu__icon--email"
-                width="30"
-                height="30"
-              >
-                <use href="./img/icons.svg#email"></use>
-              </svg>
-            </a>
-          </li>
+    <include include-html="./partials/mobile-menu.html"></include>
 
-          <li class="social-mobile-menu__item">
-            <a
-              class="social-mobile-menu__link"
-              href="https://t.me/Evgen_Zaharevich"
-              target="_blank"
-              title="Send a message to Evgen in Telegram"
-            >
-              <svg
-                class="social-mobile-menu__icon social-mobile-menu__icon--telegram"
-                width="30"
-                height="30"
-              >
-                <use href="./img/icons.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-mobile-menu__item">
-            <a
-              class="social-mobile-menu__link"
-              href="https://www.linkedin.com/in/evgen-zaharevich-92546a265/"
-              target="_blank"
-              title="Open Evgen's LinkedIn page"
-            >
-              <svg
-                class="social-mobile-menu__icon social-mobile-menu__icon--linkedin"
-                width="30"
-                height="30"
-              >
-                <use href="./img/icons.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-mobile-menu__item">
-            <a
-              class="social-mobile-menu__link"
-              href="https://github.com/Evgen-Zaharevich"
-              target="_blank"
-              title="Open Evgen's GitHub page"
-            >
-              <svg
-                class="social-mobile-menu__icon social-mobile-menu__icon--github"
-                width="30"
-                height="30"
-              >
-                <use href="./img/icons.svg#github"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="wrapper">
       <div class="content">
         <header class="hero-section">
           <div class="container">
-            <ul class="social">
-              <li class="social__item">
-                <a
-                  class="social__link"
-                  href="tel:+380983505359"
-                  target="_blank"
-                  title="Call Evgen"
-                >
-                  <svg
-                    class="social__icon social__icon--mobile-phone"
-                    width="30"
-                    height="30"
-                  >
-                    <use href="./img/icons.svg#mobile-phone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link"
-                  href="mailto:Zaharevich.Evgen@gmail.com"
-                  target="_blank"
-                  title="Send a letter to Evgen"
-                >
-                  <svg
-                    class="social__icon social__icon--email"
-                    width="30"
-                    height="30"
-                  >
-                    <use href="./img/icons.svg#email"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="social__item">
-                <a
-                  class="social__link"
-                  href="https://t.me/Evgen_Zaharevich"
-                  target="_blank"
-                  title="Send a message to Evgen in Telegram"
-                >
-                  <svg
-                    class="social__icon social__icon--telegram"
-                    width="30"
-                    height="30"
-                  >
-                    <use href="./img/icons.svg#telegram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link"
-                  href="https://www.linkedin.com/in/evgen-zaharevich-92546a265/"
-                  target="_blank"
-                  title="Open Evgen's LinkedIn page"
-                >
-                  <svg
-                    class="social__icon social__icon--linkedin"
-                    width="30"
-                    height="30"
-                  >
-                    <use href="./img/icons.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link"
-                  href="https://github.com/Evgen-Zaharevich"
-                  target="_blank"
-                  title="Open Evgen's GitHub page"
-                >
-                  <svg
-                    class="social__icon social__icon--github"
-                    width="30"
-                    height="30"
-                  >
-                    <use href="./img/icons.svg#github"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            <include include-html="./partials/social.html"></include>
 
             <img
               data-speed=".6"
@@ -236,6 +63,7 @@
                 Front-End of Websites and Web Applications that leads to
                 success.
               </p>
+
               <div class="gallery">
                 <div data-speed=".8" class="gallery__left">
                   <div class="image-brushes">
@@ -376,6 +204,10 @@
                     </p>
                   </div>
                 </div>
+
+                <include
+                  include-html="./partials/mobile-gallery.html"
+                ></include>
               </div>
             </div>
           </div>
@@ -383,10 +215,46 @@
         <footer class="footer"></footer>
       </div>
     </div>
+
     <div class="on-top">
       <svg class="arrow-up" width="40" height="40">
         <use href="./img/icons.svg#arrow-up"></use>
       </svg>
     </div>
+
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("include-html");
+          if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                /* Remove the attribute, and call this function once more: */
+                elmnt.removeAttribute("include-html");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+      includeHTML();
+    </script>
   </body>
 </html>

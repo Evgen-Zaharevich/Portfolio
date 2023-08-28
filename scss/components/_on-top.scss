@@ -1,8 +1,9 @@
 .on-top {
+  height: 42px;
   position: fixed;
   right: 30px;
   bottom: 10%;
-  border-radius: 50%;
+  border-radius: 150%;
   background-color: black;
   opacity: 0.8;
   cursor: pointer;
@@ -10,7 +11,7 @@
   display: none;
 
   transform: translate(-1px, -1px);
-  box-shadow: var(--button-shadow-active);
+  box-shadow: var(--button-shadow);
 }
 
 .on-top--show-btn {
@@ -23,7 +24,7 @@
 
 .on-top:active {
   transform: translateY(0px);
-  box-shadow: var(--button-shadow);
+  box-shadow: var(--button-shadow-active);
   transition: var(--button-transition);
 }
 

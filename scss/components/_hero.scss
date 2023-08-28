@@ -1,7 +1,6 @@
 .hero {
-  width: calc(var(--index) * 35);
+  width: calc(var(--index) * 37);
   position: absolute;
-  // left: 39vw;
   top: -25vh;
   z-index: -1;
 }
@@ -9,9 +8,7 @@
 @media (min-width: 768px) {
   .hero {
     width: calc(var(--index) * 40);
-    position: absolute;
     left: 39vw;
     top: 5vh;
-    z-index: -1;
   }
 }
