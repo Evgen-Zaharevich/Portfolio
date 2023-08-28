@@ -6,10 +6,28 @@
   font-size: calc(var(--index) * 6);
   position: absolute;
   width: min-content;
-  bottom: 30vh;
+  bottom: 27vh;
   line-height: 1.1;
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 0.01em;
   font-family: "Playfair Display", serif;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    height: 100vh;
+  }
+
+  .main-title {
+    font-size: calc(var(--index) * 6);
+    position: absolute;
+    width: min-content;
+    bottom: 30vh;
+    line-height: 1.1;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 0.01em;
+    font-family: "Playfair Display", serif;
+    margin: 0;
+  }
 }

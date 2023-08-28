@@ -1,7 +1,17 @@
 .hero {
-  width: calc(var(--index) * 40);
+  width: calc(var(--index) * 37);
   position: absolute;
-  left: 39vw;
-  top: 5vh;
+  // left: 39vw;
+  top: -25vh;
   z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    width: calc(var(--index) * 40);
+    position: absolute;
+    left: 39vw;
+    top: 5vh;
+    z-index: -1;
+  }
 }
