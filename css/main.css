@@ -134,7 +134,7 @@ h6 {
 }
 
 .hero {
-  width: calc(var(--index) * 31);
+  width: calc(var(--index) * 30);
   position: absolute;
   z-index: -1;
 }
