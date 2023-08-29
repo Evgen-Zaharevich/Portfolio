@@ -19,28 +19,195 @@
       rel="stylesheet"
     />
 
-    <!-- <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script> -->
-    <script src="./js/mobile-menu.js" defer></script>
     <script src="./libs/gsap/gsap.min.js" defer></script>
     <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="./js/scroll.js" type="module" defer></script>
     <script src="./js/button-on-top.js" type="module" defer></script>
+    <script src="./js/mobile-menu.js" type="module" defer></script>
   </head>
 
   <body>
-    <include include-html="./partials/mobile-menu.html"></include>
+    <!-- mobile-menu -->
+
+    <button class="menu-button" data-menu-button aria-expanded="false">
+      <span class="burger-menu"></span>
+    </button>
+
+    <div class="social-mobile-menu-container" data-menu>
+      <ul class="social-mobile-menu">
+        <li class="social-mobile-menu__item">
+          <a
+            class="social-mobile-menu__link"
+            href="tel:+380983505359"
+            target="_blank"
+            title="Call Evgen"
+          >
+            <svg
+              class="social-mobile-menu__icon social-mobile-menu__icon--mobile-phone"
+              width="30"
+              height="30"
+            >
+              <use href="./img/icons.svg#mobile-phone"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-mobile-menu__item">
+          <a
+            class="social-mobile-menu__link"
+            href="mailto:Zaharevich.Evgen@gmail.com"
+            target="_blank"
+            title="Send a letter to Evgen"
+          >
+            <svg
+              class="social-mobile-menu__icon social-mobile-menu__icon--email"
+              width="30"
+              height="30"
+            >
+              <use href="./img/icons.svg#email"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="social-mobile-menu__item">
+          <a
+            class="social-mobile-menu__link"
+            href="https://t.me/Evgen_Zaharevich"
+            target="_blank"
+            title="Send a message to Evgen in Telegram"
+          >
+            <svg
+              class="social-mobile-menu__icon social-mobile-menu__icon--telegram"
+              width="30"
+              height="30"
+            >
+              <use href="./img/icons.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-mobile-menu__item">
+          <a
+            class="social-mobile-menu__link"
+            href="https://www.linkedin.com/in/evgen-zaharevich-92546a265/"
+            target="_blank"
+            title="Open Evgen's LinkedIn page"
+          >
+            <svg
+              class="social-mobile-menu__icon social-mobile-menu__icon--linkedin"
+              width="30"
+              height="30"
+            >
+              <use href="./img/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-mobile-menu__item">
+          <a
+            class="social-mobile-menu__link"
+            href="https://github.com/Evgen-Zaharevich"
+            target="_blank"
+            title="Open Evgen's GitHub page"
+          >
+            <svg
+              class="social-mobile-menu__icon social-mobile-menu__icon--github"
+              width="30"
+              height="30"
+            >
+              <use href="./img/icons.svg#github"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- ----- -->
 
     <div class="wrapper">
       <div class="content">
         <header class="hero-section">
           <div class="container">
-            <include include-html="./partials/social.html"></include>
+            <ul class="social">
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="tel:+380983505359"
+                  target="_blank"
+                  title="Call Evgen"
+                >
+                  <svg
+                    class="social__icon social__icon--mobile-phone"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="./img/icons.svg#mobile-phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="mailto:Zaharevich.Evgen@gmail.com"
+                  target="_blank"
+                  title="Send a letter to Evgen"
+                >
+                  <svg
+                    class="social__icon social__icon--email"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="./img/icons.svg#email"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://t.me/Evgen_Zaharevich"
+                  target="_blank"
+                  title="Send a message to Evgen in Telegram"
+                >
+                  <svg
+                    class="social__icon social__icon--telegram"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="./img/icons.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://www.linkedin.com/in/evgen-zaharevich-92546a265/"
+                  target="_blank"
+                  title="Open Evgen's LinkedIn page"
+                >
+                  <svg
+                    class="social__icon social__icon--linkedin"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="./img/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://github.com/Evgen-Zaharevich"
+                  target="_blank"
+                  title="Open Evgen's GitHub page"
+                >
+                  <svg
+                    class="social__icon social__icon--github"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="./img/icons.svg#github"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
 
             <img
               data-speed=".6"
@@ -204,11 +371,143 @@
                     </p>
                   </div>
                 </div>
-
-                <include
-                  include-html="./partials/mobile-gallery.html"
-                ></include>
               </div>
+
+              <!-- mobile-gallery -->
+              <section class="mobile-gallery">
+                <div class="text-block text-block__web-studio gallery__item">
+                  <h2 class="text-block__title">
+                    <span class="text-block__title--web-studio">W</span>ebStudio
+                  </h2>
+                  <p class="text-block__paragraph">
+                    Adaptive and Responsive Web Site for a Studio that Develops
+                    new Interfaces and Designs. <br />
+                    Technologies Used: HTML, SCSS, JavaScript.
+                  </p>
+                </div>
+
+                <div class="image-brushes">
+                  <a
+                    class="gallery__link"
+                    href="https://evgen-zaharevich.github.io/web-studio/"
+                    target="_blank"
+                  >
+                    <img
+                      class="gallery__item"
+                      src="./img/work/WebStudio.jpg"
+                      alt="Website image"
+                    />
+                  </a>
+                </div>
+
+                <div class="text-block text-block__ice-cream gallery__item">
+                  <h2 class="text-block__title">
+                    <span class="text-block__title--ice-cream">I</span>ceCream
+                  </h2>
+                  <p class="text-block__paragraph">
+                    Adaptive Web Site for Ice Cream Store. <br />
+                    Technologies Used: HTML, SCSS, JavaScript, JQuery, Parcel,
+                    Animation.css
+                  </p>
+                </div>
+
+                <div class="image-brushes">
+                  <a
+                    class="gallery__link"
+                    href="https://evgen-zaharevich.github.io/ice-cream/"
+                    target="_blank"
+                  >
+                    <img
+                      class="gallery__item"
+                      src="./img/work/IceCreame.jpg"
+                      alt="Website image"
+                    />
+                  </a>
+                </div>
+
+                <div class="text-block text-block__filmoteka gallery__item">
+                  <h2 class="text-block__title">
+                    <span class="text-block__title--filmoteka">F</span>ilmoteka
+                  </h2>
+                  <p class="text-block__paragraph">
+                    A Site where you can familiarize yourself with Novelties,
+                    Bestsellers and ordinary Films of the World of Cinema. Get
+                    acquainted with the Description, watch the Trailer, find out
+                    the Rating of the Film.
+                    <br />
+                    Technologies Used: HTML, SCSS, JavaScript, Parcel, Axios,
+                    Notiflix, Darkmode-JS.
+                  </p>
+                </div>
+
+                <div class="image-brushes">
+                  <a
+                    class="gallery__link"
+                    href="https://evgen-zaharevich.github.io/filmoteka"
+                    target="_blank"
+                  >
+                    <img
+                      class="gallery__item"
+                      src="./img/work/Filmoteka.jpg"
+                      alt="Website image"
+                    />
+                  </a>
+                </div>
+
+                <div class="text-block text-block__task-pro gallery__item">
+                  <h2 class="text-block__title">
+                    <span class="text-block__title--task-pro">T</span>askPro
+                  </h2>
+                  <p class="text-block__paragraph">
+                    Application for Planning your Work and free Time.
+                    Technologies Used: React.JS, Redux, React Datepicker, React
+                    Icons, React Loader Spinner, React Toastify,
+                    Styled-Components, Bootstrap, Date-fns, Dayjs, Formik,
+                    Notiflix, Overlayscrollbars, Prop-Types, Uuid, Yup.
+                  </p>
+                </div>
+
+                <div class="image-brushes">
+                  <a
+                    class="gallery__link"
+                    href="https://dmitriyushkvarok.github.io/team-project-task-pro-frontend/"
+                    target="_blank"
+                  >
+                    <img
+                      class="gallery__item"
+                      src="./img/work/TaskPro.jpg"
+                      alt="Website image"
+                  /></a>
+                </div>
+
+                <div class="text-block text-block__image-finder gallery__item">
+                  <h2 class="text-block__title">
+                    <span class="text-block__title--image-finder">I</span
+                    >mageFinder
+                  </h2>
+                  <p class="text-block__paragraph">
+                    A simple and attractive Image search Website with Pixabay
+                    API. <br />
+                    Technologies Used: React.JS, Axios, Nanoid,
+                    Styled-Components, Web-Vitals.
+                  </p>
+                </div>
+
+                <div class="image-brushes">
+                  <a
+                    class="gallery__link"
+                    href="https://evgen-zaharevich.github.io/ImageFinder/"
+                    target="_blank"
+                  >
+                    <img
+                      class="gallery__item"
+                      src="./img/work/ImageFinder.jpg"
+                      alt="Website image"
+                    />
+                  </a>
+                </div>
+              </section>
+              <!-- ------- -->
             </div>
           </div>
         </main>
@@ -221,40 +520,5 @@
         <use href="./img/icons.svg#arrow-up"></use>
       </svg>
     </div>
-
-    <script>
-      function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /* Loop through a collection of all HTML elements: */
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-          elmnt = z[i];
-          /*search for elements with a certain atrribute:*/
-          file = elmnt.getAttribute("include-html");
-          if (file) {
-            /* Make an HTTP request using the attribute value as the file name: */
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-              if (this.readyState == 4) {
-                if (this.status == 200) {
-                  elmnt.innerHTML = this.responseText;
-                }
-                if (this.status == 404) {
-                  elmnt.innerHTML = "Page not found.";
-                }
-                /* Remove the attribute, and call this function once more: */
-                elmnt.removeAttribute("include-html");
-                includeHTML();
-              }
-            };
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            /* Exit the function: */
-            return;
-          }
-        }
-      }
-      includeHTML();
-    </script>
   </body>
 </html>

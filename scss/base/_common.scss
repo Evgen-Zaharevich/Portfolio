@@ -7,7 +7,6 @@
 
 body {
   background-color: #fff;
-  background-size: 50px;
   color: black;
   font-family: raleway-c;
   overflow-x: hidden;
@@ -25,10 +24,17 @@ h6 {
 }
 
 .container {
-  padding: 0 5vw;
-  width: 100vw;
+  padding: 0 2vw;
+}
 
-  @media screen and (min-width: 1280px) {
+// @media screen and (min-width: 375px) {
+//   .container {
+//     padding: 0 7vw;
+//   }
+// }
+
+@media screen and (min-width: 1280px) {
+  .container {
     padding: 0 7vw;
   }
 }

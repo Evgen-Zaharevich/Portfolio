@@ -2,13 +2,23 @@
   background-image: url(../img/brush-stroke/brush-stroke-image.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: calc(var(--index) * 3) 60px;
+  padding: calc(var(--index) * 4) 35px;
 }
 
 .image-brushes:not(:last-child) {
-  margin-bottom: calc(var(--gallery-gap) * 1.3);
+  margin-bottom: calc(var(--gallery-gap) * 1);
 }
 
-.image-brushes:first-child {
-  margin-top: calc(var(--gallery-gap) * 1.7);
+@media (min-width: 1024px) {
+  .image-brushes {
+    padding: calc(var(--index) * 3) 60px;
+  }
+
+  .image-brushes:not(:last-child) {
+    margin-bottom: calc(var(--gallery-gap) * 1.3);
+  }
+
+  .image-brushes:first-child {
+    margin-top: calc(var(--gallery-gap) * 1.7);
+  }
 }
