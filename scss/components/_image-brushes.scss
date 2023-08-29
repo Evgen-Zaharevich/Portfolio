@@ -2,7 +2,7 @@
   background-image: url(../img/brush-stroke/brush-stroke-image.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: calc(var(--index) * 4) 40px;
+  padding: calc(var(--index) * 3) 40px;
 }
 
 .image-brushes:not(:last-child) {

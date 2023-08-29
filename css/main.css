@@ -134,7 +134,7 @@ h6 {
 }
 
 .hero {
-  width: calc(var(--index) * 33);
+  width: calc(var(--index) * 31);
   position: absolute;
   z-index: -1;
 }
@@ -183,7 +183,7 @@ h6 {
   background-image: url(../img/brush-stroke/brush-stroke-image.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: calc(var(--index) * 4) 40px;
+  padding: calc(var(--index) * 3) 40px;
 }
 
 .image-brushes:not(:last-child) {
