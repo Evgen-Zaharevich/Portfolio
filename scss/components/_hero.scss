@@ -1,5 +1,5 @@
 .hero {
-  width: calc(var(--index) * 30);
+  width: calc(var(--index) * 33);
   position: absolute;
   z-index: -1;
 }
@@ -12,16 +12,15 @@
 
 @media (min-width: 768px) {
   .hero {
-    width: calc(var(--index) * 48);
-    // left: 19vw;
+    width: calc(var(--index) * 46);
     top: 10vh;
   }
 }
 
 @media (min-width: 1024px) {
   .hero {
-    width: calc(var(--index) * 40);
-    left: 39vw;
-    top: 5vh;
+    width: calc(var(--index) * 45);
+    left: 31vw;
+    top: 1vh;
   }
 }
