@@ -52,5 +52,6 @@
 
   .text-block__paragraph {
     line-height: 1.75;
+    font-size: calc(var(--index) * 0.8);
   }
 }
