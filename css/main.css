@@ -134,7 +134,7 @@ h6 {
 }
 
 .hero {
-  width: calc(var(--index) * 35);
+  width: calc(var(--index) * 33);
   position: absolute;
   z-index: -1;
 }
@@ -169,7 +169,7 @@ h6 {
   }
 }
 .about {
-  margin: 100px 15px;
+  margin: 100px 15px 150px;
   font-size: calc(var(--index) * 1.5);
 }
 
@@ -183,7 +183,7 @@ h6 {
   background-image: url(../img/brush-stroke/brush-stroke-image.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: calc(var(--index) * 4) 35px;
+  padding: calc(var(--index) * 4) 40px;
 }
 
 .image-brushes:not(:last-child) {
@@ -206,7 +206,7 @@ h6 {
 }
 
 .gallery__item {
-  max-width: calc(var(--index) * 27);
+  max-width: calc(var(--index) * 25);
   border-radius: 8px;
 }
 
