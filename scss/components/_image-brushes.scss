@@ -9,6 +9,12 @@
   margin-bottom: calc(var(--gallery-gap) * 1);
 }
 
+@media (min-width: 768px) {
+  .image-brushes {
+    padding: calc(var(--index) * 4) 70px;
+  }
+}
+
 @media (min-width: 1024px) {
   .image-brushes {
     padding: calc(var(--index) * 3) 60px;

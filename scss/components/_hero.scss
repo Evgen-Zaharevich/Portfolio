@@ -4,7 +4,21 @@
   z-index: -1;
 }
 
+@media (min-width: 425px) {
+  .hero {
+    width: calc(var(--index) * 40);
+  }
+}
+
 @media (min-width: 768px) {
+  .hero {
+    width: calc(var(--index) * 48);
+    // left: 19vw;
+    top: 10vh;
+  }
+}
+
+@media (min-width: 1024px) {
   .hero {
     width: calc(var(--index) * 40);
     left: 39vw;

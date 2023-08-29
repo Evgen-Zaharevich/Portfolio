@@ -16,6 +16,12 @@
 
 @media (min-width: 768px) {
   .main-title {
+    bottom: 10vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-title {
     bottom: 30vh;
   }
 }

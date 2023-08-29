@@ -3,9 +3,17 @@
 }
 
 .gallery__item {
-  max-width: calc(var(--index) * 25);
+  max-width: calc(var(--index) * 21);
 
   border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .gallery__item {
+    max-width: calc(var(--index) * 35);
+
+    border-radius: 8px;
+  }
 }
 
 @media (min-width: 1024px) {

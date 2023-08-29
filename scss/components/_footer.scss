@@ -6,6 +6,12 @@
   height: 30px;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    height: 70px;
+  }
+}
+
 @media (min-width: 1024px) {
   .footer {
     height: 100px;

@@ -1,7 +1,11 @@
+.text-block {
+  padding: 0 2rem;
+}
+
 .text-block__title {
   font-size: calc(var(--index) * 3);
   line-height: calc(var(--index) * 1);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .text-block__title--web-studio {
@@ -24,6 +28,12 @@
 .text-block__paragraph {
   line-height: 1.75;
   font-size: calc(var(--index) * 1.5);
+}
+
+@media (min-width: 768px) {
+  .text-block {
+    padding: 0 5rem;
+  }
 }
 
 @media (min-width: 1024px) {

@@ -5,6 +5,13 @@
 
 @media (min-width: 768px) {
   .about {
+    margin: 300px 50px 200px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
     margin: 200px 130px 50px;
     font-size: 30px;
   }

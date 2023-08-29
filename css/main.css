@@ -77,7 +77,7 @@ h6 {
   padding: 0;
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .social {
     display: flex;
   }
@@ -139,7 +139,18 @@ h6 {
   z-index: -1;
 }
 
+@media (min-width: 425px) {
+  .hero {
+    width: calc(var(--index) * 40);
+  }
+}
 @media (min-width: 768px) {
+  .hero {
+    width: calc(var(--index) * 48);
+    top: 10vh;
+  }
+}
+@media (min-width: 1024px) {
   .hero {
     width: calc(var(--index) * 40);
     left: 39vw;
@@ -165,6 +176,11 @@ h6 {
 
 @media (min-width: 768px) {
   .main-title {
+    bottom: 10vh;
+  }
+}
+@media (min-width: 1024px) {
+  .main-title {
     bottom: 30vh;
   }
 }
@@ -174,6 +190,12 @@ h6 {
 }
 
 @media (min-width: 768px) {
+  .about {
+    margin: 300px 50px 200px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) {
   .about {
     margin: 200px 130px 50px;
     font-size: 30px;
@@ -190,6 +212,11 @@ h6 {
   margin-bottom: calc(var(--gallery-gap) * 1);
 }
 
+@media (min-width: 768px) {
+  .image-brushes {
+    padding: calc(var(--index) * 4) 70px;
+  }
+}
 @media (min-width: 1024px) {
   .image-brushes {
     padding: calc(var(--index) * 3) 60px;
@@ -206,10 +233,16 @@ h6 {
 }
 
 .gallery__item {
-  max-width: calc(var(--index) * 25);
+  max-width: calc(var(--index) * 21);
   border-radius: 8px;
 }
 
+@media (min-width: 768px) {
+  .gallery__item {
+    max-width: calc(var(--index) * 35);
+    border-radius: 8px;
+  }
+}
 @media (min-width: 1024px) {
   .gallery {
     display: flex;
@@ -234,10 +267,14 @@ h6 {
     margin-top: calc(var(--gallery-gap) * 1);
   }
 }
+.text-block {
+  padding: 0 2rem;
+}
+
 .text-block__title {
   font-size: calc(var(--index) * 3);
   line-height: calc(var(--index) * 1);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .text-block__title--web-studio {
@@ -265,6 +302,11 @@ h6 {
   font-size: calc(var(--index) * 1.5);
 }
 
+@media (min-width: 768px) {
+  .text-block {
+    padding: 0 5rem;
+  }
+}
 @media (min-width: 1024px) {
   .text-block__web-studio {
     margin-bottom: calc(var(--gallery-gap) * 2.8);
@@ -300,6 +342,11 @@ h6 {
   height: 30px;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    height: 70px;
+  }
+}
 @media (min-width: 1024px) {
   .footer {
     height: 100px;
@@ -354,7 +401,7 @@ h6 {
   margin-right: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .menu-button {
     display: none;
   }
