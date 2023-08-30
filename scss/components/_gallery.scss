@@ -19,7 +19,7 @@
 @media (min-width: 1024px) {
   .gallery {
     display: flex;
-    padding: calc(var(--index) * 3) 0;
+    padding: calc(var(--index) * 1) 0;
   }
 
   .gallery > * {
