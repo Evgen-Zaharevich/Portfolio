@@ -2,11 +2,7 @@
   display: block;
   margin: auto;
 
-  width: calc(var(--index) * 32);
-  // position: absolute;
-  // left: 199px;
-  // right: 100px;
-  // z-index: -1;
+  width: calc(var(--index) * 33);
 }
 
 @media (min-width: 425px) {
@@ -25,7 +21,14 @@
 @media (min-width: 1024px) {
   .hero {
     width: calc(var(--index) * 45);
-    left: 31vw;
+    position: absolute;
+    left: 20vw;
     top: 1vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    left: 29vw;
   }
 }

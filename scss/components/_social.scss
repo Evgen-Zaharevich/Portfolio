@@ -1,4 +1,5 @@
 .social {
+  position: absolute;
   align-items: center;
   gap: 5px;
   width: calc(var(--index) * 15);
@@ -6,9 +7,10 @@
   background-image: url(../img/brush-stroke/brush-stroke-1.png);
   background-repeat: no-repeat;
   background-position: 0% 50%;
-  background-size: 250px;
+  background-size: calc(var(--index) * 13);
   padding: 0;
   display: none;
+  z-index: 2;
 
   @media (min-width: 1024px) {
     display: flex;
@@ -28,6 +30,8 @@
   border: 0.5px solid var(--icon-border-white);
   border-radius: 3px;
   transition: var(--social-icon-transition);
+  width: calc(var(--index) * 1.5);
+  height: calc(var(--index) * 1.5);
 }
 
 .social__icon--mobile-phone,
@@ -41,12 +45,10 @@
 }
 .social__link:hover .social__icon--mobile-phone {
   background: var(--bgc-icon-mobile-phone);
-  // fill: var(--icon-black-color);
   border: none;
 }
 .social__link:hover .social__icon--email {
   background: var(--bgc-icon-email);
-  // fill: var(--icon-black-color);
   border: none;
 }
 .social__link:hover .social__icon--telegram {
