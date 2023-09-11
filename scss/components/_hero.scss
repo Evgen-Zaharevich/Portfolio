@@ -1,7 +1,12 @@
 .hero {
+  display: block;
+  margin: auto;
+
   width: calc(var(--index) * 32);
-  position: absolute;
-  z-index: -1;
+  // position: absolute;
+  // left: 199px;
+  // right: 100px;
+  // z-index: -1;
 }
 
 @media (min-width: 425px) {

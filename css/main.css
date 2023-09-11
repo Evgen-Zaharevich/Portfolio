@@ -134,9 +134,9 @@ h6 {
 }
 
 .hero {
+  display: block;
+  margin: auto;
   width: calc(var(--index) * 32);
-  position: absolute;
-  z-index: -1;
 }
 
 @media (min-width: 425px) {
@@ -159,6 +159,9 @@ h6 {
 }
 .main-header {
   height: 100vh;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
 }
 
 .main-title {
@@ -166,7 +169,7 @@ h6 {
   position: absolute;
   width: -moz-min-content;
   width: min-content;
-  bottom: 25vh;
+  bottom: 30vh;
   line-height: 1.1;
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 0.01em;
@@ -185,7 +188,7 @@ h6 {
   }
 }
 .about {
-  margin: 100px 15px 150px;
+  margin: 400px 15px 150px;
   font-size: calc(var(--index) * 1.2);
 }
 
