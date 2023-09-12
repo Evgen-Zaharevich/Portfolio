@@ -3,9 +3,15 @@
 }
 
 .text-block__title {
+  display: inline;
   font-size: calc(var(--index) * 3);
   line-height: calc(var(--index) * 1);
   margin-bottom: 2rem;
+}
+
+.text-block__title:hover {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
 }
 
 .text-block__title--web-studio {
