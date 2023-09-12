@@ -14,6 +14,7 @@
   --filmoteka-title-color: rgb(255, 0, 27);
   --task-pro-title-color: #bedbb0;
   --image-finder-title-color: rgb(100, 243, 140);
+  --text-selection: orange;
   --button-shadow: black 3px 3px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
     rgba(0, 0, 0, 0.1) 0px 34px 30px;
   --button-shadow-active: black 1px 1px 5px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
@@ -45,6 +46,11 @@ body {
   overflow-x: hidden;
   line-height: 1.75;
   font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 h1,
@@ -544,4 +550,42 @@ h6 {
   .mobile-gallery {
     display: none;
   }
+}
+p::-moz-selection {
+  color: var(--text-selection);
+}
+p::selection {
+  color: var(--text-selection);
+}
+
+h1::-moz-selection {
+  color: var(--text-selection);
+}
+
+h1::selection {
+  color: var(--text-selection);
+}
+
+h2::-moz-selection {
+  color: var(--text-selection);
+}
+
+h2::selection {
+  color: var(--text-selection);
+}
+
+span::-moz-selection {
+  color: var(--text-selection);
+}
+
+span::selection {
+  color: var(--text-selection);
+}
+
+a::-moz-selection {
+  color: var(--text-selection);
+}
+
+a::selection {
+  color: var(--text-selection);
 }/*# sourceMappingURL=main.css.map */

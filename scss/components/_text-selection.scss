@@ -1,0 +1,19 @@
+p::selection {
+  color: var(--text-selection);
+}
+
+h1::selection {
+  color: var(--text-selection);
+}
+
+h2::selection {
+  color: var(--text-selection);
+}
+
+span::selection {
+  color: var(--text-selection);
+}
+
+a::selection {
+  color: var(--text-selection);
+}
