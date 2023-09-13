@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --index: calc(1vw + 1vh);
   --gallery-gap: calc(var(--index) * 10);
@@ -210,6 +211,17 @@ h6 {
 .about {
   margin: 400px 15px 150px;
   font-size: calc(var(--index) * 1.2);
+}
+
+.about::first-letter {
+  font-size: 2em; /* Увеличиваем размер шрифта в 2 раза */
+  font-weight: bold; /* Жирный стиль */
+  color: #ff6600; /* Оранжевый цвет текста */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Тень текста */
+  margin-right: 2px; /* Расстояние справа */
+  padding: 5px; /* Внутренний отступ */
+  background-color: #f0f0f0; /* Фоновый цвет */
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
