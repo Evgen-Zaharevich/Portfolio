@@ -4,26 +4,15 @@
 }
 
 .about::first-letter {
-  font-size: 2em; /* Увеличиваем размер шрифта в 2 раза */
-  font-weight: bold; /* Жирный стиль */
-  color: #ff6600; /* Оранжевый цвет текста */
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Тень текста */
-  margin-right: 2px; /* Расстояние справа */
-  padding: 5px; /* Внутренний отступ */
-  background-color: #f0f0f0; /* Фоновый цвет */
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff6600;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-right: 2px;
+  padding: 5px;
+  background-color: #f0f0f0;
   border-radius: 5px;
 }
-
-// .about__word-selection {
-//   font-size: 1em; /* Увеличиваем размер шрифта в 2 раза */
-//   font-weight: bold; /* Жирный стиль */
-//   color: #ff6600; /* Оранжевый цвет текста */
-//   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Тень текста */
-//   margin-right: 2px; /* Расстояние справа */
-//   padding: 5px; /* Внутренний отступ */
-//   background-color: #f0f0f0; /* Фоновый цвет */
-//   border-radius: 5px;
-// }
 
 @media (min-width: 768px) {
   .about {
